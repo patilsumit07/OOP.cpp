@@ -1,4 +1,4 @@
-//EXP2_Salary
+
 #include<iostream>
 #include<string>
 
@@ -23,7 +23,7 @@ public:
     cin>> name;
     cout<<"\nEnter staff Salary : \t";
     cin>> Basic_Salary; 
-  }//accept
+  }
   
   void calculate()
   {
@@ -31,7 +31,7 @@ public:
     HRA = 800;
     Itax = Basic_Salary *0.15;
     NetSalary= Basic_Salary + DA + HRA -Itax;  
-  }//calc
+  }
   
   void display()
   {
@@ -43,14 +43,14 @@ public:
     cout<<"\nIncome Tax\t"<< Itax;
     cout<<"\nNet Salary \t"<< NetSalary << endl;
     
-  }//display
+  }
   
   string getName()
   {
     return name;
-  } //name
+  } 
   
-}; // class staff
+}; 
 
 int main()
 { 
@@ -65,7 +65,7 @@ int main()
     cout<<"\nEnter staff Details of staff "<< i +1 << endl;
     s[i].accept();
     s[i].calculate();
-  }//for loop Accept data
+  }
   
   for(i=0;i<n-1;i++)
   {
@@ -76,16 +76,16 @@ int main()
         swap(s[i],s[j]);
       }
     }
-  }//for loop sorting 
+  }
   
   cout<<"\n staff pay slip";
   
   for(i=0;i<n;i++)
   {
     s[i].display();
-  }//for loop for display
+  }
   
   return 0;
   
   
-}//main
+}
